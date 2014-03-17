@@ -26,4 +26,8 @@ describe 'kata potter' do
 		expect(total_cost(10)).to eq 68.0
 	end
 
+	it 'should return a discounted price of 136 pounds for 20 books' do
+		expect(total_cost(20)).to eq 136
+	end
+
 end
