@@ -1,7 +1,7 @@
 
 def total_cost(number)
-	if number / 10 == 1
-		68.0
+	if number / 10 >= 1
+		number / 10 * 68.0 + total_cost(number % 10)
 	else
 		not_dicounted_books = number % 2
 		discounted_books = number / 2
